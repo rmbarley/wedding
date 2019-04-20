@@ -7,16 +7,13 @@ const RsvpForm = () => (
 
     <form name="rsvp" data-netlify="true" data-netlify-honeypot="bot-field">
       <input type="hidden" name="form-name" value="rsvp" />
-      <p hidden>
-        <label>
-          Don’t fill this out: <input name="bot-field" />
-        </label>
-      </p>
+      <input type="hidden" name="bot-field" />
       <div className="form-group col-lg-8">
         <label htmlFor="rsvpName">Name</label>
         <input
           type="text"
           className="form-control"
+          name="name"
           id="rsvpName"
           placeholder="Your Name"
         />
@@ -26,6 +23,7 @@ const RsvpForm = () => (
         <input
           type="email"
           className="form-control"
+          name="email"
           id="rsvpEmail"
           placeholder="you@mail.com"
         />
@@ -35,6 +33,7 @@ const RsvpForm = () => (
         <input
           type="number"
           className="form-control"
+          name="phone"
           id="rsvpPhoneNumber"
           placeholder="(123) 456-789"
         />
@@ -42,7 +41,7 @@ const RsvpForm = () => (
 
       <div className="form-group col-lg-8">
         <label htmlFor="inputState">Meal</label>
-        <select id="inputState" className="form-control">
+        <select id="inputState" name="meal" className="form-control">
           <option>Short Rib</option>
           <option>Chicken Masala</option>
           <option>Baked Haddock</option>
