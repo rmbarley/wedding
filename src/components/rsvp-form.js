@@ -5,7 +5,14 @@ const RsvpForm = () => (
     <h2>RSVP</h2>
     <h3>Please RSVP no later than September 1</h3>
 
-    <form name="rsvp" netlify>
+    <form name="rsvp" data-netlify="true" data-netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="rsvp" />
+      <p hidden>
+        <label>
+          Don’t fill this out:{" "}
+          <input name="bot-field" onChange={this.handleChange} />
+        </label>
+      </p>
       <div className="form-group col-lg-8">
         <label htmlFor="rsvpName">Name</label>
         <input
