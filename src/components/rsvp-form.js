@@ -5,9 +5,9 @@ const RsvpForm = () => (
     <h2>RSVP</h2>
     <h3>Please RSVP no later than September 1</h3>
 
-    <form name="rsvp" method="POST" data-netlify="true">
+    <form name="rsvp" netlify>
       <div className="form-group col-lg-8">
-        <label htmlFor="inputEmail4">Name</label>
+        <label htmlFor="rsvpName">Name</label>
         <input
           type="text"
           className="form-control"
@@ -27,7 +27,7 @@ const RsvpForm = () => (
       <div className="form-group col-lg-8">
         <label htmlFor="rsvpPhoneNumber">Phone Number</label>
         <input
-          type="text"
+          type="number"
           className="form-control"
           id="rsvpPhoneNumber"
           placeholder="(123) 456-789"
