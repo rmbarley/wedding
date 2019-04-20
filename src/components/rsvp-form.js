@@ -9,8 +9,7 @@ const RsvpForm = () => (
       <input type="hidden" name="form-name" value="rsvp" />
       <p hidden>
         <label>
-          Don’t fill this out:{" "}
-          <input name="bot-field" onChange={this.handleChange} />
+          Don’t fill this out: <input name="bot-field" />
         </label>
       </p>
       <div className="form-group col-lg-8">
