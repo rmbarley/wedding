@@ -2,15 +2,19 @@ body,
 html {
   height: 100%;
   margin: 0;
+  background-color: #f7f7f7;
 }
 
 h1,
-h2 {
-  color: white !important;
-  margin: 0;
+h2,
+h3 {
+  text-align: center;
 }
 
-header {
+.hero--content h1,
+.hero--content h2 {
+  color: white !important;
+  margin: 0;
 }
 
 .hero {
@@ -61,4 +65,15 @@ strong {
 
 .Countdown-label {
   margin-right: 1.7rem;
+}
+
+.section {
+  padding: 1rem 5rem;
+}
+
+form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
