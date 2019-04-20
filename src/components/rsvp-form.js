@@ -1,17 +1,11 @@
 import React from "react"
 
 const RsvpForm = () => (
-  <section
-    className="container"
-    id="rsvp-form"
-    name="rsvp"
-    method="POST"
-    data-netlify="true"
-  >
+  <section className="container" id="rsvp-form">
     <h2>RSVP</h2>
     <h3>Please RSVP no later than September 1</h3>
 
-    <form>
+    <form name="rsvp" action="/" method="POST" data-netlify="true">
       <div className="form-group col-lg-8">
         <label htmlFor="inputEmail4">Name</label>
         <input
