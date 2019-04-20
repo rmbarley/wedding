@@ -6,7 +6,10 @@ import Hero from "../components/hero"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO
+      title="Grande Barley Wedding"
+      keywords={[`wedding`, `ryan barley`, `krista grande`, `deer forest`]}
+    />
     <Hero />
   </Layout>
 )
