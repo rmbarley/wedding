@@ -2,7 +2,7 @@ import React from "react"
 import Countdown from "./countdown"
 const Hero = () => {
   return (
-    <section className="hero">
+    <section className="hero" id="hero">
       <div className="hero--content">
         <h1>Krista and Ryan</h1>
         <h2>10.13.2019</h2>
