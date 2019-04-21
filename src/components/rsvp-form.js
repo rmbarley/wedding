@@ -5,7 +5,13 @@ const RsvpForm = () => (
     <h2>RSVP</h2>
     <h3>Please RSVP no later than September 1</h3>
 
-    <form name="rsvp" data-netlify="true" data-netlify-honeypot="bot-field">
+    <form
+      name="rsvp"
+      method="POST"
+      action="/success"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+    >
       <input type="hidden" name="form-name" value="rsvp" />
       <input type="hidden" name="bot-field" />
       <div className="form-group col-lg-8">
@@ -43,14 +49,16 @@ const RsvpForm = () => (
         <label htmlFor="inputState">Meal</label>
         <select id="inputState" name="meal" className="form-control">
           <option>Short Rib</option>
-          <option>Chicken Masala</option>
+          <option>Chicken Marsala</option>
           <option>Baked Haddock</option>
           <option>Mushroom Ravioli</option>
         </select>
       </div>
-      <button type="submit" className="btn btn-primary">
-        Submit
-      </button>
+      <div className="col-lg-8 d-flex flex-row-reverse">
+        <button type="submit" className="btn btn-dark">
+          Submit
+        </button>
+      </div>
     </form>
   </section>
 )
