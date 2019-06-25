@@ -1,0 +1,37 @@
+#us {
+  text-align: center;
+  img {
+    border-radius: 50% !important;
+    max-width: 100% !important;
+    display: block;
+  }
+  > div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: justify;
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+    }
+    & * + * {
+      margin-top: 1.5rem;
+    }
+    p {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and(max-width: 800px) {
+  #us {
+    div {
+      flex-direction: column !important;
+      &:last-child {
+        order: -1 !important;
+      }
+      & * + * {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}

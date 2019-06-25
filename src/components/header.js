@@ -1,47 +1,33 @@
 import React from "react"
-import Navbar from "react-bootstrap/Navbar"
-import Nav from "react-bootstrap/Nav"
-import { Link as NavLink } from "react-scroll"
+import { Link } from "gatsby"
 
-const Header = () => (
-  <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
-    <Navbar.Brand href="/#home">Deerly Beloved</Navbar.Brand>
-    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-    <Navbar.Collapse id="responsive-navbar-nav">
-      <Nav className="ml-auto">
-        <NavLink
-          to="us"
-          className="nav-link"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-        >
+const Header = () => {
+  return (
+    <nav className="navbar navbar-light bg-transparent d-flex">
+      <Link className="navbar-brand" to="/">
+        Deerly Beloved
+      </Link>
+      <div className="navbar-nav d-flex flex-row justify-content-between w-25">
+        <Link className="nav-link nav-item" to="/us">
           Us
-        </NavLink>
-        <NavLink
-          to="photos"
-          className="nav-link"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-        >
-          Photos
-        </NavLink>
-        <NavLink
-          to="rsvp-form"
-          className="nav-link"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-        >
+        </Link>
+        <Link className="nav-link nav-item" to="/rsvp">
           RSVP
-        </NavLink>
-      </Nav>
-    </Navbar.Collapse>
-  </Navbar>
-)
+        </Link>
+        <Link className="nav-link nav-item " to="/faq">
+          FAQ
+        </Link>
+        <a
+          className="nav-link nav-item"
+          href="https://registry.theknot.com/-october-2019/20709649"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Registry
+        </a>
+      </div>
+    </nav>
+  )
+}
 
 export default Header
