@@ -10,7 +10,8 @@ const About = props => (
         Krista grew up in Derry, NH. She wasn't a horse girl, but she wanted to
         be. She used to love finding turtles in streams. She still does, but she
         used to too. She is a pediatric neurology resident at Cincinnati
-        Children's hospital. She can read your fortune in your brain waves.
+        Children's hospital. She can read your fortune in your brain waves. She
+        labored over these bios for 2 minutes.
       </p>
       <div style={{ minWidth: "20%", maxWidth: "5rem" }}>
         <span className="d-block">
@@ -21,8 +22,12 @@ const About = props => (
     <div>
       <h2>Him</h2>
       <p>
-        Ryan loves Krista. He also loves Carly Rae Jepsen, knowing a lot about
-        coffee, and pretending to know a lot about a lot.
+        Ryan Barley’s life goal is to eat a noodle from every country. He likes
+        to cook, listen to music you’ve never heard of, and accumulate books. He
+        does not have a spreadsheet of video games he’s beaten, but you wouldn’t
+        be surprised if he did. He’s popular at parties. He loves dogs, the
+        smaller the better. He built this website with his own two mechanical
+        keyboards.
       </p>
       <div style={{ minWidth: "20%", maxWidth: "5rem" }}>
         <span className="d-block">

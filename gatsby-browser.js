@@ -3,7 +3,8 @@
  *
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
-
+require("slick-carousel/slick/slick.css")
+require("slick-carousel/slick/slick-theme.css")
 // You can delete this file if you're not using it
 require("bootstrap/dist/css/bootstrap.min.css")
 require("./src/styles/styles.scss")

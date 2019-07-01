@@ -17,7 +17,20 @@ form {
   background-color: white;
 }
 
-#___gatsby > div > div > main > section {
+#___gatsby > div > div > main > section.gatsby-image-wrapper {
   height: 100vh;
   margin-top: -3.5rem;
+}
+
+.slick-slide {
+  max-height: 41.111rem !important;
+  background-color: rgb(0, 0, 0);
+  picture > img {
+    max-height: 41.111rem;
+    object-fit: contain !important;
+  }
+}
+.slick-prev:before,
+.slick-next:before {
+  color: rgba(0, 0, 0, 0.75);
 }
