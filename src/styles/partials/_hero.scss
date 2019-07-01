@@ -1,0 +1,13 @@
+.hero-content {
+  margin-top: 12rem;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  text-align: center;
+  color: white;
+  > h1,
+  > h2 {
+    margin-bottom: 1.5rem;
+    color: white !important;
+  }
+}
