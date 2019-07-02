@@ -4,16 +4,18 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import About from "../components/about"
 import Carousel from "../components/carousel"
+import Footer from "../components/footer"
 
 const AboutPage = props => {
   return (
-    <Layout>
+    <Layout className="mb-5">
       <SEO
         title="Grande Barley Wedding"
         keywords={[`wedding`, `ryan barley`, `krista grande`, `deer forest`]}
       />
       <About images={props} />
       <Carousel />
+      <Footer />
     </Layout>
   )
 }

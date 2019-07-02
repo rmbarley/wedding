@@ -4,7 +4,7 @@ import RsvpForm from "../components/rsvp-form"
 import Venue from "../components/venue"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
+import Footer from "../components/footer"
 const RSVP = () => (
   <Layout>
     <SEO
@@ -13,6 +13,7 @@ const RSVP = () => (
     />
     <Venue />
     <RsvpForm />
+    <Footer />
   </Layout>
 )
 

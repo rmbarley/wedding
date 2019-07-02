@@ -8,13 +8,13 @@ const Header = () => {
         Deerly Beloved
       </Link>
       <div className="navbar-nav d-flex flex-row justify-content-between w-25">
-        <Link className="nav-link nav-item" to="/us">
+        <Link className="nav-link nav-item" activeClassName="active" to="/us">
           Us
         </Link>
-        <Link className="nav-link nav-item" to="/rsvp">
+        <Link className="nav-link nav-item" activeClassName="active" to="/rsvp">
           RSVP
         </Link>
-        <Link className="nav-link nav-item " to="/faq">
+        <Link className="nav-link nav-item" activeClassName="active" to="/faq">
           FAQ
         </Link>
         <a

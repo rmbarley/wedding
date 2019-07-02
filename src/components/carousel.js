@@ -5,16 +5,15 @@ import { useStaticQuery, graphql } from "gatsby"
 
 const Carousel = () => {
   const settings = {
-    className: "",
     dots: true,
     infinite: true,
+    adaptiveHeight: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     speed: 500,
     autoplaySpeed: 2500,
     cssEase: "linear",
-    adaptiveHeight: true,
   }
   const data = useStaticQuery(graphql`
     query allImages {
@@ -38,16 +37,11 @@ const Carousel = () => {
     }
   `)
   return (
-    <div className="container mt-4">
+    <div className="container mt-4 pb-2">
       <Slider {...settings}>
         {data.allFile.edges.map(img => (
-          <div
-            key={img.node.name}
-            style={{ minWidth: "20%", maxHeight: "630px" }}
-          >
-            <span className="d-block">
-              <Img fluid={img.node.childImageSharp.fluid} />
-            </span>
+          <div key={img.node.name}>
+            <Img fluid={img.node.childImageSharp.fluid} />
           </div>
         ))}
       </Slider>

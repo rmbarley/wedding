@@ -10,11 +10,12 @@ const Success = () => (
     <section className="container">
       <h1>Success!</h1>
       <h4>We got your RSVP!</h4>
-
       <p>
         If you are bringing a guest, please go back and fill it out for them.
       </p>
-      <Link to="/">Back</Link>
+      <button className="btn btn-link">
+        <Link to="/rsvp">Back</Link>
+      </button>
     </section>
   </Layout>
 )
