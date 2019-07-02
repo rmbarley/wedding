@@ -1,3 +1,8 @@
+main > section.gatsby-image-wrapper {
+  height: 100vh;
+  margin-top: -3.5rem;
+}
+
 .hero-content {
   margin-top: 12rem;
   display: flex;
@@ -9,5 +14,11 @@
   > h2 {
     margin-bottom: 1.5rem;
     color: white !important;
+  }
+}
+
+@media screen and(max-width: 800px) {
+  main > section.gatsby-image-wrapper {
+    margin-top: -6rem;
   }
 }

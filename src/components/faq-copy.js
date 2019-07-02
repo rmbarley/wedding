@@ -40,7 +40,7 @@ const FaqCopy = () => (
       </li>
       <li>
         <h3>I am coming from out of town. Where should I stay?</h3>
-        <p>ACTION ITEM: We need to nail down that hotel</p>
+        <p>We are recommending the Courtyard Mariott in Milford, MA</p>
       </li>
       <li>
         <h3>When is the RSVP deadline?</h3>
@@ -51,7 +51,7 @@ const FaqCopy = () => (
         <p>
           Yes. In addition, please let us know if you will need assistance
           moving between the ceremony site and the reception. The zoo will
-          provide transportation via golf cart
+          provide a golf cart and driver
         </p>
       </li>
       <li>
@@ -72,7 +72,7 @@ const FaqCopy = () => (
         <h3>What if I have a dietary restriction?</h3>
         <p>
           We've tried to take that into consideration when planning the menu,
-          but if we missed let us know
+          but if we missed something, let us know
         </p>
       </li>
       <li>
@@ -107,7 +107,7 @@ const FaqCopy = () => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            link
+            link, but don't feel obliged
           </a>
         </p>
       </li>
@@ -116,13 +116,18 @@ const FaqCopy = () => (
           Is there transportation being provided between reception and hotels?
         </h3>
         <p>
-          There will be a shuttle between the zoo and XX hotel. If you are
-          staying elsewhere, you will need to arrange your own transportation
+          There will be a shuttle between the zoo and Courtyard Mariott in
+          Milford. If you are staying elsewhere, you will need to arrange your
+          own transportation
         </p>
       </li>
       <li>
         <h3>I have a question not answered here; how do I contact you?</h3>
-        <p>Here</p>
+        <p>
+          <a href="mailto:kgandrb@gmail.com?subject=Help! It's a Wedding!">
+            Here
+          </a>
+        </p>
       </li>
     </ul>
   </section>
