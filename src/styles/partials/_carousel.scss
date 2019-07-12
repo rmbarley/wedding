@@ -1,5 +1,6 @@
 .slick-slide {
   max-height: 41.111rem !important;
+
   background-color: #f7f7f7;
   picture > img {
     max-height: 41.111rem;
@@ -9,4 +10,10 @@
 .slick-prev:before,
 .slick-next:before {
   color: rgba(0, 0, 0, 0.75);
+}
+
+@media screen and(max-width: 580px) {
+  .slick-slider {
+    display: none;
+  }
 }

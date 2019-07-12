@@ -110,13 +110,6 @@ class Countdown extends Component {
           </span>
           <span className="Countdown-label">Minutes</span>
         </span>
-
-        <span className="Countdown-col">
-          <span className="Countdown-col-element">
-            <strong>{this.addLeadingZeros(countDown.sec)}</strong>
-          </span>
-          <span className="Countdown-label">Seconds</span>
-        </span>
       </div>
     )
   }
