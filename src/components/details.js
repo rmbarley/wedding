@@ -1,7 +1,7 @@
 import React from "react"
 import Map from "./map"
 
-const Venue = () => (
+const Details = () => (
   <section className="container">
     <div className="card-deck">
       <div className="card">
@@ -48,4 +48,4 @@ const Venue = () => (
   </section>
 )
 
-export default Venue
+export default Details

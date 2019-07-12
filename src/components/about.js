@@ -13,7 +13,7 @@ const About = props => (
         Children's hospital. She can read your fortune in your brain waves. She
         labored over these bios for 2 minutes.
       </p>
-      <div style={{ minWidth: "20%", maxWidth: "5rem" }}>
+      <div style={{ minWidth: "35%", maxWidth: "5rem" }}>
         <span className="d-block">
           <Img fluid={props.images.data.her.childImageSharp.fluid} />
         </span>
@@ -29,7 +29,7 @@ const About = props => (
         smaller the better. He built this website with his own two mechanical
         keyboards.
       </p>
-      <div style={{ minWidth: "20%", maxWidth: "5rem" }}>
+      <div style={{ minWidth: "35%", maxWidth: "5rem" }}>
         <span className="d-block">
           <Img fluid={props.images.data.him.childImageSharp.fluid} />
         </span>
@@ -45,7 +45,7 @@ const About = props => (
         go to soccer games. They are raising an increasingly alarming number of
         cats.
       </p>
-      <div style={{ minWidth: "20%", maxWidth: "5rem" }}>
+      <div style={{ minWidth: "35%", maxWidth: "5rem" }}>
         <Img
           fluid={{
             ...props.images.data.them.childImageSharp.fluid,
