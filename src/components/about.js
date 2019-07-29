@@ -2,7 +2,7 @@ import React from "react"
 import Img from "gatsby-image"
 
 const About = props => (
-  <section className="container" id="us">
+  <section className="container pb-5" id="us">
     <h1>Us</h1>
     <div>
       <h2>Her</h2>

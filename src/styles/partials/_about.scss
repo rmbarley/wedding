@@ -24,7 +24,9 @@
     }
   }
 }
-
+.gatsby-image-wrapper {
+  overflow: visible !important;
+}
 @media screen and(max-width: 800px) {
   #us {
     div {

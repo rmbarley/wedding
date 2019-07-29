@@ -35,6 +35,13 @@ const FaqCopy = () => (
         </p>
       </li>
       <li>
+        <h3>Will there be any pre-wedding events?</h3>
+        <p>
+          We're working on booking a venue to host a casual dinner for guests
+          coming in from out of town on Saturday. Check back for updates
+        </p>
+      </li>
+      <li>
         <h3>Can I bring a date?</h3>
         <p>You may use your +1 as you see fit</p>
       </li>
@@ -107,7 +114,7 @@ const FaqCopy = () => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            link, but don't feel obliged
+            link, but don't feel obliged. We're just happy you came
           </a>
         </p>
       </li>
