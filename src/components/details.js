@@ -25,7 +25,10 @@ const Details = () => (
             <span className="d-block">2 Southwick St, Mendon, MA</span>
           </h6>
           <Map isMarkerShown />
-          <p className="card-text">More information coming soon</p>
+          <p className="card-text">
+            Staying Overnight? We're booked a block of rooms at the Holiday Inn
+            Express Boston/Milford
+          </p>
           <a
             href="https://southwickszoo.com/"
             className="card-link"
@@ -40,8 +43,19 @@ const Details = () => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            Nearby hotel
+            Hotel
           </a>
+        </div>
+      </div>
+      <div className="card">
+        <div className="card-body">
+          <h5 className="card-title">Saturday Night</h5>
+          <h6 className="card-subtitle mb-2 text-muted">12 October 2019</h6>
+          <p className="card-text">
+            We'd like to have a casual get-together Saturday night to thank
+            everyone who traveled to come. We are still working on finding a
+            venue to host it, so check back for updates.
+          </p>
         </div>
       </div>
     </div>
