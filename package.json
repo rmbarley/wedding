@@ -19,7 +19,7 @@
     "gatsby-plugin-sass": "^2.1.0",
     "gatsby-plugin-sharp": "^2.0.32",
     "gatsby-plugin-typography": "^2.2.13",
-    "gatsby-source-filesystem": "^2.1.0",
+    "gatsby-source-filesystem": "^2.1.6",
     "gatsby-transformer-sharp": "^2.1.17",
     "google-maps-react": "^2.0.2",
     "intersection-observer": "^0.7.0",
