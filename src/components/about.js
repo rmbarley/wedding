@@ -7,11 +7,10 @@ const About = props => (
     <div>
       <h2>Her</h2>
       <p>
-        Krista grew up in Derry, NH. She wasn't a horse girl, but she wanted to
-        be. She used to love finding turtles in streams. She still does, but she
-        used to too. She is a pediatric neurology resident at Cincinnati
-        Children's hospital. She can read your fortune in your brain waves. She
-        labored over these bios for 2 minutes.
+        Krista grew up in Derry, NH. She used to love finding turtles in
+        streams. She still does, but she used to too. She is a pediatric
+        neurology resident at Cincinnati Children's hospital. She can read your
+        fortune in your brain waves. She labored over these bios for 2 minutes.
       </p>
       <div style={{ minWidth: "35%", maxWidth: "5rem" }}>
         <span className="d-block">

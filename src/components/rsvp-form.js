@@ -32,15 +32,13 @@ class RsvpForm extends Component {
           <input type="hidden" name="bot-field" />
           <fieldset>
             <div className="form-group radio-form-group ">
-              <label htmlFor="rsvpName">
-                First things first: Are you Coming?
-              </label>
+              First things first: Are you Coming?
               <div>
                 <div className="custom-control custom-radio custom-control-inline">
                   <input
                     type="radio"
                     id="rsvpYes"
-                    name="rsvp"
+                    name="amComing"
                     value="true"
                     className="custom-control-input"
                     onClick={event => this.handleChange(event)}
@@ -56,7 +54,7 @@ class RsvpForm extends Component {
                   <input
                     type="radio"
                     id="rsvpNo"
-                    name="rsvp"
+                    name="amComing"
                     value="false"
                     className="custom-control-input"
                     onClick={event => this.handleChange(event)}
@@ -109,20 +107,22 @@ class RsvpForm extends Component {
                   Meal Choice <br />
                   (served with roasted potatoes and seasonal vegetable medley)
                 </label>
-                <select id="inputState" name="meal" className="form-control">
-                  <option>Short Rib</option>
-                  <option>Chicken Marsala with mushrooms</option>
-                  <option>
+                <select id="inputState" name="meal[]" className="form-control">
+                  <option value="short-rib">Short Rib</option>
+                  <option value="chicken">
+                    Chicken Marsala with mushrooms
+                  </option>
+                  <option value="fish">
                     New England-Style Baked Haddock with cracker crumb topping
                     and white wine lemon sauce
                   </option>
-                  <option>
+                  <option value="vegetarian">
                     Ravioli stuffed with wild mushrooms, and spinach with a sage
                     cream sauce and pecorino
                   </option>
                 </select>
               </div>
-              <div className="form-group ">
+              <div className="form-group">
                 <label htmlFor="dietary-restrictions">
                   Any Dietary Restrictions We Didn't Account For?
                 </label>
@@ -148,6 +148,7 @@ class RsvpForm extends Component {
                     className="form-check-input"
                     type="checkbox"
                     id="assistance"
+                    name="assistance"
                   />
                   <label className="form-check-label" htmlFor="assistance">
                     I will need assistance getting to the ceremony site

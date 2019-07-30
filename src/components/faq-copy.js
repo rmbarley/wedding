@@ -123,7 +123,7 @@ const FaqCopy = () => (
           Is there transportation being provided between reception and hotels?
         </h3>
         <p>
-          There will be a shuttle between the zoo and Courtyard Mariott in
+          There will be a shuttle between the zoo and Holiday Inn Express in
           Milford. If you are staying elsewhere, you will need to arrange your
           own transportation
         </p>

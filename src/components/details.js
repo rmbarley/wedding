@@ -38,12 +38,12 @@ const Details = () => (
             Zoo Link
           </a>
           <a
-            href="https://mariott.com"
+            href="https://grouptravelorg.hotelplanner.com/eh/37odn-8ow"
             className="card-link"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Hotel
+            Hotel Room Block
           </a>
         </div>
       </div>
