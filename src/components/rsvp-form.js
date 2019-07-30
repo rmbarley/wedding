@@ -80,83 +80,81 @@ class RsvpForm extends Component {
               </div>
             </div>
           </fieldset>
-          {this.state.selectedOption === "true" ? (
-            <fieldset>
-              <div className="form-group ">
-                <label htmlFor="rsvpEmail">Email</label>
+          {/* {this.state.selectedOption === "true" ? ( */}
+          <fieldset>
+            <div className="form-group ">
+              <label htmlFor="rsvpEmail">Email</label>
+              <input
+                type="email"
+                className="form-control"
+                name="email"
+                id="rsvpEmail"
+                placeholder="you@mail.com"
+              />
+            </div>
+            <div className="form-group ">
+              <label htmlFor="rsvpPhoneNumber">Phone Number</label>
+              <input
+                type="number"
+                className="form-control"
+                name="phone"
+                id="rsvpPhoneNumber"
+                placeholder="(123) 456-789"
+              />
+            </div>
+            <div className="form-group ">
+              <label htmlFor="inputState">
+                Meal Choice <br />
+                (served with roasted potatoes and seasonal vegetable medley)
+              </label>
+              <select id="inputState" name="meal[]" className="form-control">
+                <option value="short-rib">Short Rib</option>
+                <option value="chicken">Chicken Marsala with mushrooms</option>
+                <option value="fish">
+                  New England-Style Baked Haddock with cracker crumb topping and
+                  white wine lemon sauce
+                </option>
+                <option value="vegetarian">
+                  Ravioli stuffed with wild mushrooms, and spinach with a sage
+                  cream sauce and pecorino
+                </option>
+              </select>
+            </div>
+            <div className="form-group">
+              <label htmlFor="dietary-restrictions">
+                Any Dietary Restrictions We Didn't Account For?
+              </label>
+              <textarea
+                className="form-control"
+                name="dietary-restrictions"
+                id="dietary-restrictions"
+              />
+            </div>
+            <div className="form-group ">
+              <label htmlFor="rsvpSong">Got a Song Request?</label>
+              <input
+                type="text"
+                className="form-control"
+                name="song"
+                id="rsvpPhoneNumber"
+                placeholder=""
+              />
+            </div>
+            <div className="form-group ">
+              <div className="form-check">
                 <input
-                  type="email"
-                  className="form-control"
-                  name="email"
-                  id="rsvpEmail"
-                  placeholder="you@mail.com"
+                  className="form-check-input"
+                  type="checkbox"
+                  id="assistance"
+                  name="assistance"
                 />
-              </div>
-              <div className="form-group ">
-                <label htmlFor="rsvpPhoneNumber">Phone Number</label>
-                <input
-                  type="number"
-                  className="form-control"
-                  name="phone"
-                  id="rsvpPhoneNumber"
-                  placeholder="(123) 456-789"
-                />
-              </div>
-              <div className="form-group ">
-                <label htmlFor="inputState">
-                  Meal Choice <br />
-                  (served with roasted potatoes and seasonal vegetable medley)
+                <label className="form-check-label" htmlFor="assistance">
+                  I will need assistance getting to the ceremony site
                 </label>
-                <select id="inputState" name="meal[]" className="form-control">
-                  <option value="short-rib">Short Rib</option>
-                  <option value="chicken">
-                    Chicken Marsala with mushrooms
-                  </option>
-                  <option value="fish">
-                    New England-Style Baked Haddock with cracker crumb topping
-                    and white wine lemon sauce
-                  </option>
-                  <option value="vegetarian">
-                    Ravioli stuffed with wild mushrooms, and spinach with a sage
-                    cream sauce and pecorino
-                  </option>
-                </select>
               </div>
-              <div className="form-group">
-                <label htmlFor="dietary-restrictions">
-                  Any Dietary Restrictions We Didn't Account For?
-                </label>
-                <textarea
-                  className="form-control"
-                  name="dietary-restrictions"
-                  id="dietary-restrictions"
-                />
-              </div>
-              <div className="form-group ">
-                <label htmlFor="rsvpSong">Got a Song Request?</label>
-                <input
-                  type="text"
-                  className="form-control"
-                  name="song"
-                  id="rsvpPhoneNumber"
-                  placeholder=""
-                />
-              </div>
-              <div className="form-group ">
-                <div className="form-check">
-                  <input
-                    className="form-check-input"
-                    type="checkbox"
-                    id="assistance"
-                    name="assistance"
-                  />
-                  <label className="form-check-label" htmlFor="assistance">
-                    I will need assistance getting to the ceremony site
-                  </label>
-                </div>
-              </div>
-            </fieldset>
-          ) : null}
+            </div>
+          </fieldset>
+          {/* ) : null} */}
           <div
             className={`d-flex ${
               this.state.selectedOption ? "d-row-reverse" : "d-row"
