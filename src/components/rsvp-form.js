@@ -4,12 +4,12 @@ class RsvpForm extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      selectedOption: null,
+      selectedOption: true,
     }
+    this.handleChange.bind(this)
   }
 
   handleChange(event) {
-    console.log(event.target.value)
     this.setState({
       selectedOption: event.target.value,
     })
@@ -80,8 +80,12 @@ class RsvpForm extends Component {
               </div>
             </div>
           </fieldset>
-          {/* {this.state.selectedOption === "true" ? ( */}
-          <fieldset>
+          <fieldset
+            style={{
+              visibility:
+                this.state.selectedOption === "true" ? "visible" : "hidden",
+            }}
+          >
             <div className="form-group ">
               <label htmlFor="rsvpEmail">Email</label>
               <input
@@ -154,7 +158,6 @@ class RsvpForm extends Component {
               </div>
             </div>
           </fieldset>
-          {/* ) : null} */}
           <div
             className={`d-flex ${
               this.state.selectedOption ? "d-row-reverse" : "d-row"
