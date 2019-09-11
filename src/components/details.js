@@ -26,8 +26,9 @@ const Details = () => (
           </h6>
           <Map isMarkerShown />
           <p className="card-text">
-            Staying Overnight? We're booked a block of rooms at the Holiday Inn
-            Express Boston/Milford
+            Staying Overnight? We've booked a block of rooms at the Holiday Inn
+            Express Boston/Milford. There will be a shuttle too and from the
+            zoo.
           </p>
           <a
             href="https://southwickszoo.com/"
@@ -38,12 +39,12 @@ const Details = () => (
             Zoo Link
           </a>
           <a
-            href="https://grouptravelorg.hotelplanner.com/eh/37odn-8ow"
-            className="card-link"
+            href="https://www.hiexpress.com/redirect?path=rates&brandCode=EX&localeCode=en&regionCode=1&hotelCode=fmmma&checkInDate=12&checkInMonthYear=092019&checkOutDate=14&checkOutMonthYear=092019&_PMID=99801505&GPC=gbw&cn=no&viewfullsite=true"
+            className="card-link d-block"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Hotel Room Block
+            Hotel Room Block (Book by 9/27)
           </a>
         </div>
       </div>
